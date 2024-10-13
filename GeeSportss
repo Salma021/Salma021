@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live TV | Sports</title>
+    <style>
+        body{
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        p{
+            margin: -4px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .heading{
+            text-align: center;
+            color: lime;
+            margin: 24px;
+            margin-top: 0px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub-heading{
+            text-align: center;
+            margin-top: 10px; /* This value will be adjusted by the slider */
+            margin-bottom: 10px;
+        }
+
+        .card{
+            height: 120%;
+            width: 100%;
+            border: 2px solid #00ff00;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            background-color: rgb(0, 0, 0);
+            transition: 0.5s;
+        }
+
+        .card:hover{
+            background-color: rgb(38, 56, 36);
+        }
+
+        .des{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .t1, .t2 {
+            width: 85px;
+            height: 85px;
+            border-radius: 90px;
+        }
+
+        .card-des{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .live{
+            text-align: center;
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        .vs{
+            width: 20px;
+            margin-bottom: 30px;
+            color: blue;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                height: 150px;
+            }
+
+            .t1, .t2 {
+                width: 60px;
+                height: 60px;
+                border-radius: 80px;
+            }
+
+            .vs {
+                width: 40px;
+                margin-bottom: 5px;
+            }
+
+            .card-des {
+                margin-top: -30px;
+            }
+        }
+
+        .counter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">GeeSports TV</h1>
+    </div>
+    
+    <a href="https://tapmadlive.akamaized.net/tapmadold/tensports.smil/playlist.m3u8">
+        <div class="card">
+            <p class="des">England Tour of Pakistan</p>
+            <div class="card-des">
+                <img src="https://png.pngtree.com/png-clipart/20221229/original/pngtree-england-flag-circle-button-united-kingdom-symbol-png-image_8824542.png" alt="" class="t1">
+                <img src="https://i.ibb.co/db0cbJX/pngwing-com-3.png" alt="" class="vs">
+                <img src="https://media.istockphoto.com/id/1347332330/vector/pakistan-3d-rounded-country-flag-button-icon.jpg?s=170667a&w=0&k=20&c=1S5ntwgS62OQoC5oQRU_g7Ifmlm30_7tLr--EiQOYls=" alt="" class="t2">
+            </div>
+            <p class="live">Match</p>
+        </div>
+    </a>
+
+    <a href="https://cricstreamz.github.io/stream1/">
+        <div class="card">
+            <p class="des">Westindies Tour Of Sri Lanka</p>
+            <div class="card-des">
+                <img src="https://i.ibb.co/sy9s9t8/IMG-20241012-185734.jpg" alt="" class="t1">
+                <img src="https://i.ibb.co/db0cbJX/pngwing-com-3.png" alt="" class="vs">
+                <img src="https://i.ibb.co/s136m9y/IMG-20241012-190943.jpg" alt="" class="t2">
+            </div>
+            <p class="live"> Match</p>
+        </div>
+    </a>
+
+    <a href="icc/live.html">
+        <div class="card">
+            <p class="des">ICC Women's T20 World Cup</p>
+            <div class="card-des">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/2024_ICC_Women%27s_T20_World_Cup_qualifier_logo.jpg" alt="" class="t1">
+                <img src="https://i.ibb.co/db0cbJX/pngwing-com-3.png" alt="" class="vs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/2024_ICC_Women%27s_T20_World_Cup_qualifier_logo.jpg" alt="" class="t2">
+            </div>
+            <p class="live">Match</p>
+        </div>
+    </a>
+
+    <div class="counter">
+        <a href='https://www.versicherungen.at/tier-krankenversicherung/'>Tier-Krankenversicherung</a> 
+        <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c2c906da30d34d7a5b59379a0bcdee112037ae24'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1243702/t/1"></script>
+    </div>
+    
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+
+    <!-- JavaScript to handle gap adjustment -->
+    <script>
+        function adjustGap() {
+            const slider = document.getElementById("gapSlider");
+            const subHeading = document.querySelector(".sub-heading");
+            subHeading.style.marginTop = slider.value + "px";
+        }
+    </script>
+
+</body>
+</html>
